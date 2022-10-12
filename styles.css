@@ -1,0 +1,106 @@
+:root{
+    --bgColor: #012E40;
+    --colorDegradado: #024959;
+    --placeColor: #026773;
+    --btnColor: #3CA6A6;
+    --textColor: #F2E3D5;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: auto;
+    margin: 0;
+
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}
+h1{
+    /* margin: 0 auto; */
+    text-align: center;
+    color: #8dc1cc;
+}
+form{
+    margin: 20px auto 20px;
+    text-align: center;
+    width: 40%;
+    height: auto;
+}
+form input[type="text"]{
+    width: 90%;
+    /* height: 40px; */
+    border-width: 0 0 1px 0;
+    border-color: var(--placeColor);
+    outline: none;
+
+    color: var(--textColor);
+    font-size: 1.2rem;
+    background-color: inherit;
+}
+form input[type="text"]::placeholder{
+    color: var(--placeColor);
+    font-size: 1.2rem;
+}
+form input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    width: 28px;
+    height: 28px;
+
+    background-color: var(--btnColor);
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    transition: all .5s;
+}
+form input[type="submit"]:hover{
+    background-color: var(--textColor);
+    border-radius: 50%;
+
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* ESTILOS PARA LAS TAREAS */
+.list-container{
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+
+}
+.task-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+    padding: 8px 8px;
+    
+    background-color: var(--colorDegradado) ;
+}
+.task-container label{
+    margin: 0 4px 0 0;
+}
+.task-container span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--placeColor);
+}
+.task-container span:hover{
+    color: var(--btnColor);
+}
+
+/* ESTILOS DE LOS RESULTADOS */
+.stats p{
+    width: 40%;
+    margin: 15px auto 30px;
+    padding: 10px 0;
+    border-radius: 30px;
+
+    background-color: var(--colorDegradado);
+    color: var(--textColor);
+    text-align: center;
+    font-weight: bold;
+}
+.stats span{
+    font-size: 1.5rem;
+}
